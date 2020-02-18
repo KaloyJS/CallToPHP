@@ -10,6 +10,10 @@ namespace GetDeviceInfo
 {
     class CallToPHP
     {
+        // Class to send data to php endpoint where it takes in url of the php endpoint ie. https://www.site.com/php/endpoint.php 
+        // and then params and value separated by comma ie . 
+        // example: status = CallToPHP.GetPost(postURL, "save_device_info", "1", "imei", imei, "model", model, "software_version", softwareVersion, "OEM", oem, "serial_number", serialNumber, "workStation", workStation, "capacity", capacity, "color", capacity);
+
         public static string GetPost(string Url, params string[] postdata) 
         {
             string result = string.Empty;
